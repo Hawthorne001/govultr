@@ -1,4 +1,101 @@
 # Change Log
+## [3.15.0](https://github.com/vultr/govultr/compare/v3.14.1...v3.15.0) (2025-03-04)
+### Enhancements
+* Add functions for account bandwidth [PR 356](https://github.com/vultr/govultr/pull/356)
+* Add functions for billing pending charges [PR 357](https://github.com/vultr/govultr/pull/357)
+
+### Dependencies
+* Update Go from v1.23 to v1.24 [PR 360](https://github.com/vultr/govultr/pull/360)
+
+### Clean Up
+* Fix whitespace [PR 359](https://github.com/vultr/govultr/pull/359)
+
+### New Contributors
+* @DazWilkin made their first contribution in [PR 356](https://github.com/vultr/govultr/pull/356)
+
+## [3.14.1](https://github.com/vultr/govultr/compare/v3.14.0...v3.14.1) (2025-01-17)
+### Bug Fixes
+* Load Balancers: Add missing SSL fields and AutoSSL struct [PR 352](https://github.com/vultr/govultr/pull/352)
+
+## [3.14.0](https://github.com/vultr/govultr/compare/v3.13.0...v3.14.0) (2025-01-15)
+### Enhancements
+* Load Balancers: Add support for AutoSSL and GlobalRegions [PR 350](https://github.com/vultr/govultr/pull/350)
+
+### Clean Up
+* Database: Remove deprecated Redis references [PR 349](https://github.com/vultr/govultr/pull/349)
+
+## [3.13.0](https://github.com/vultr/govultr/compare/v3.12.0...v3.13.0) (2024-12-17)
+### Enhancements
+* VFS Storage: Add support for virtual file system storages [PR 347](https://github.com/vultr/govultr/pull/347)
+
+## [3.12.0]( https://github.com/vultr/govultr/compare/v3.11.2...v3.12.0) (2024-11-22)
+### Clean Up
+* Database: Deprecate Redis-Named Fields [PR 345](https://github.com/vultr/govultr/pull/345)
+
+## [3.11.2]( https://github.com/vultr/govultr/compare/v3.11.1...v3.11.2) (2024-10-30)
+### Bug fixes
+* Database: Fix Kafka advanced config field names [PR 343](https://github.com/vultr/govultr/pull/343)
+
+## [3.11.1](https://github.com/vultr/govultr/compare/v3.11.0...v3.11.1) (2024-10-24)
+### Bug Fixes
+* Database: Fix quota create endpoint param for Kafka [PR 341](https://github.com/vultr/govultr/pull/341)
+
+## [3.11.0](https://github.com/vultr/govultr/compare/v3.10.0...v3.11.0) (2024-10-22)
+### Enhancements
+* Database: Add support for managed Kafka [PR 337](https://github.com/vultr/govultr/pull/337)
+
+### Automation
+* Remove deprecated exportloopref linter [PR 338](https://github.com/vultr/govultr/pull/338)
+* Add Github CODEOWNERS file [PR 339](https://github.com/vultr/govultr/pull/339)
+
+## [3.10.0](https://github.com/vultr/govultr/compare/v3.9.1...v3.10.0) (2024-10-10)
+### Enhancements
+* Load Balancers: Add HTTP2/3 and timeout options [PR 325](https://github.com/vultr/govultr/pull/325)
+* CDN: add vanity domain and SSL options [PR 326](https://github.com/vultr/govultr/pull/326)
+* Instance: add user scheme field [PR 328](https://github.com/vultr/govultr/pull/328)
+* Bare Metal: add user scheme field [PR 335](https://github.com/vultr/govultr/pull/335)
+* Sub-accounts: Add support for sub-accounts [PR 329](https://github.com/vultr/govultr/pull/329)
+
+### Bug Fixes
+* CDN: Fix default empty struct fields and list files endpoint URL [PR 330](https://github.com/vultr/govultr/pull/330)
+* Sub-accounts: Fix base struct on create [PR 331](https://github.com/vultr/govultr/pull/331)
+
+### Clean Up
+* Remove deprecated private network functionality [PR 324](https://github.com/vultr/govultr/pull/324)
+* Bare Metal: remove deprecated tag fields [PR 327](https://github.com/vultr/govultr/pull/327)
+* Firewall: remove deprecated type fields [PR 327](https://github.com/vultr/govultr/pull/327)
+* Instance: remove deprecated tag fields [PR 327](https://github.com/vultr/govultr/pull/327)
+
+### Dependencies & Automation
+* Update go from v1.21 to v1.23 [PR 333](https://github.com/vultr/govultr/pull/333)
+* Update github workflows to go 1.23 [PR 334](https://github.com/vultr/govultr/pull/334)
+* Add CDN & Sub-account tests [PR 332](https://github.com/vultr/govultr/pull/332)
+
+## [3.9.1](https://github.com/vultr/govultr/compare/v3.9.0...v3.9.1) (2024-08-13)
+### Enhancements
+* Database: Add support for Managed MySQL advanced config [PR 322](https://github.com/vultr/govultr/pull/322)
+
+### Bug Fixes
+* CDN: Fix http method used on push zone file delete [PR 321](https://github.com/vultr/govultr/pull/321)
+
+## [3.9.0](https://github.com/vultr/govultr/compare/v3.8.1...v3.9.0) (2024-06-30)
+### Enhancements
+* CDN: Full support added [PR 319](https://github.com/vultr/govultr/pull/319)
+
+## [3.8.1](https://github.com/vultr/govultr/compare/v3.8.0...v3.8.1) (2023-06-06)
+### Automation
+* Update goreleaser github action from v2 to v6 [PR 317](https://github.com/vultr/govultr/pull/317)
+
+## [3.8.0](https://github.com/vultr/govultr/compare/v3.7.0...v3.8.0) (2023-06-06)
+### Enhancements
+* Inference: add support for serverless inference endpoints [PR 315](https://github.com/vultr/govultr/pull/315)
+
+### Dependencies
+* Bump github.com/hashicorp/go-retryablehttp from 0.7.6 to 0.7.7 [PR 312](https://github.com/vultr/govultr/pull/312)
+
+### Automation
+* Update golangci-lint and enable most go-vet checks [PR 314](https://github.com/vultr/govultr/pull/314)
+
 ## [3.7.0](https://github.com/vultr/govultr/compare/v3.6.4...v3.7.0) (2024-05-28)
 ### Enhancements
 * Bare Metal: Add MdiskMode to BareMetalCreate and BareMetalUpdate structs [PR 310](https://github.com/vultr/govultr/pull/310)
